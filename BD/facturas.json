@@ -1,0 +1,31 @@
+[{
+  "_id": {
+    "$oid": "5fdeae597138741f645deff5"
+  },
+  "codigo": 1,
+  "vendedor": 1,
+  "cliente": 1,
+  "producto": 2,
+  "cantidad": "20",
+  "valor_total ": "300000"
+},{
+  "_id": {
+    "$oid": "5fdeae597138741f645deff6"
+  },
+  "codigo": 2,
+  "vendedor": 2,
+  "cliente": 2,
+  "producto": 3,
+  "cantidad": "20",
+  "valor_total ": "300000"
+},{
+  "_id": {
+    "$oid": "5fdeae597138741f645deff7"
+  },
+  "codigo": 3,
+  "vendedor": 1,
+  "cliente": 3,
+  "producto": 1,
+  "cantidad": "11",
+  "valor_total ": "67000"
+}]

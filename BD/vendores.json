@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "5fde7b338c14341b9c955953"
+  },
+  "codigo": 1,
+  "nombre": "laura",
+  "cedula": "8850006",
+  "telefono": 1,
+  "cod_proveedor": 1
+},{
+  "_id": {
+    "$oid": "5fde7b338c14341b9c955954"
+  },
+  "codigo": 2,
+  "nombre": "juan",
+  "cedula": "8850006",
+  "telefono": 1,
+  "cod_proveedor": 2
+},{
+  "_id": {
+    "$oid": "5fde7b338c14341b9c955955"
+  },
+  "codigo": 3,
+  "nombre": "julian",
+  "cedula": "8850006",
+  "telefono": 1,
+  "cod_proveerdor": 3
+}]

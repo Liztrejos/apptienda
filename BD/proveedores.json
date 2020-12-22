@@ -1,0 +1,25 @@
+[{
+  "_id": {
+    "$oid": "5fde7a558c14341b9c955950"
+  },
+  "codigo": 1,
+  "nom_proveedor": "fax.sas",
+  "direccion": "cra 25 56-10",
+  "telefono": "8850006"
+},{
+  "_id": {
+    "$oid": "5fde7a558c14341b9c955951"
+  },
+  "codigo": 2,
+  "nom_proveedor": "tejidos.sas",
+  "direccion": "cra 25 30-57",
+  "telefono": "8850006"
+},{
+  "_id": {
+    "$oid": "5fde7a558c14341b9c955952"
+  },
+  "codigo": 3,
+  "nom_proveedor": "cuero.sas",
+  "direccion": "cra 23 24-10",
+  "telefono": "8850096"
+}]

@@ -1,0 +1,84 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Crear Producto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+  
+
+<ion-content padding>
+  <ion-grid class="padding-pri">
+
+   <ion-row>
+      <ion-col class="center">
+        <ion-title color="primary" class="title">Crear Productos</ion-title>
+      </ion-col>
+    </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <ion-item>
+          <ion-label  position="floating">Código<ion-text color="danger">*</ion-text></ion-label>
+          <ion-input type="number" [(ngModel)]="codigo" required autocomplete ="off" ></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+
+  <ion-row>
+    <ion-col>
+      <ion-item>
+          <ion-label  position="floating">Nombre producto<ion-text color="danger">*</ion-text></ion-label>
+          <ion-input type="text" [(ngModel)]="nom_producto" required autocomplete ="off"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+
+
+  <ion-row>
+    <ion-col>
+      <ion-item>
+          <ion-label  position="floating">Precio<ion-text color="danger">*</ion-text></ion-label>
+          <ion-input type="text" [(ngModel)]="precio" required autocomplete ="off"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+
+
+  <ion-row>
+    <ion-col>
+      <ion-item>
+          <ion-label  position="floating">Proveedor<ion-text color="danger">*</ion-text></ion-label>
+          <ion-input type="number" [(ngModel)]="proveedor" required autocomplete ="off"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <ion-item>
+          <ion-label  position="floating">Fecha de entrada<ion-text color="danger">*</ion-text></ion-label>
+          <ion-input type="text" [(ngModel)]="fecha_entrada" required autocomplete ="off"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+
+
+
+  </ion-grid>
+ <ion-grid>
+  <ion-row>
+    <ion-col>
+      <ion-button color="primary" expand="block" type="submit" (click)="agregarProducto()">Guardar</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+</ion-content>
+

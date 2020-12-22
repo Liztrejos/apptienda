@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Vendedores</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-text color="primary">
+    <h2>Vendedores</h2>
+  </ion-text>
+  <ion-row>
+    <ion-col>codigo</ion-col>
+    <ion-col>Nombre</ion-col>
+    <ion-col>cedula</ion-col>
+    <ion-col>telefono</ion-col>
+    
+  </ion-row>
+  <ion-list *ngFor="let vendedor of vendedores">
+    <ion-item>
+        <ion-label>{{vendedor.codigo}}</ion-label>
+        <ion-label>{{vendedor.nombre}}</ion-label>
+        <ion-label>{{vendedor.cedula}}</ion-label>
+        <ion-label>{{vendedor.telefono}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

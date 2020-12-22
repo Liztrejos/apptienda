@@ -1,0 +1,53 @@
+[{
+  "_id": {
+    "$oid": "5fde734a8c14341b9c955947"
+  },
+  "codigo": null,
+  "nombre": "C.C",
+  "cedula": "012012",
+  "telefono": "300765897"
+},{
+  "_id": {
+    "$oid": "5fde74968c14341b9c955948"
+  },
+  "codigo": 2,
+  "nombre": "Luz",
+  "cedula": "012012",
+  "telefono": "300765897"
+},{
+  "_id": {
+    "$oid": "5fdeb29d20ddc91ff41c9ade"
+  },
+  "codigo": 3,
+  "nombre": "Simon",
+  "cedula": "104509667",
+  "telefono": "300765897",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fdfa0691de61a309c32f5da"
+  },
+  "codigo": 12,
+  "nombre": "Ramon",
+  "cedula": "12345678",
+  "telefono": "8765437",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fdfa37d1de61a309c32f5db"
+  },
+  "codigo": 13,
+  "nombre": "jull",
+  "cedula": "105378986",
+  "telefono": "9876543",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fdfc7d91de61a309c32f5dd"
+  },
+  "codigo": 15,
+  "nombre": "jki",
+  "cedula": "344546",
+  "telefono": "7890654",
+  "__v": 0
+}]

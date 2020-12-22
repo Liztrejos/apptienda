@@ -1,0 +1,57 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Elminar Producto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid class="padding-pri">
+
+   <ion-row>
+      <ion-col class="center">
+        <ion-title color="primary" class="title">Elminar Productos</ion-title>
+      </ion-col>
+    </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <ion-item>
+          <ion-label  position="floating">Código<ion-text color="danger">*</ion-text></ion-label>
+          <ion-input type="number" [(ngModel)]="codigo" required autocomplete ="off" ></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button color="primary" expand="block" type="submit" (click)="buscarproducto()">Buscar</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <div *ngIf="myFlag">
+    <ion-row>
+      <ion-col>codigo</ion-col>
+      <ion-col>Nombre</ion-col>
+      <ion-col>Precio</ion-col>
+     
+    </ion-row>
+     <ion-list *ngFor="let producto of productos">  
+    <ion-item>
+        <ion-label>{{producto.codigo}}</ion-label>
+        <ion-label>{{producto.nom_producto}}</ion-label>
+        <ion-label>{{producto.precio}}</ion-label>
+        <!-- <ion-label>{{producto.proveedor}}</ion-label> -->
+        <!-- <ion-label *ngFor= "let proveedor of proveedores" >{{proveedor.nom_proveedor}}</ion-label> -->
+    </ion-item>
+  </ion-list>
+    <ion-row>
+      <ion-col>
+        <ion-button color="primary" expand="block" type="submit" (click)="eliminarproducto()">Eliminar</ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
+  </ion-grid>
+</ion-content>

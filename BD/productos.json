@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "5fde797f8c14341b9c95594d"
+  },
+  "codigo": 1,
+  "nom_producto": "medias",
+  "precio": "5000",
+  "proveedor": 1,
+  "fecha_entrada": "20/11/2020"
+},{
+  "_id": {
+    "$oid": "5fde797f8c14341b9c95594e"
+  },
+  "codigo": 2,
+  "nom_producto": "buso",
+  "precio": "15000",
+  "proveedor": 1,
+  "fecha_entrada": "09/11/2020"
+},{
+  "_id": {
+    "$oid": "5fde797f8c14341b9c95594f"
+  },
+  "codigo": 3,
+  "nom_producto": "pantalon",
+  "precio": "50000",
+  "proveedor": 2,
+  "fecha_entrada": "12/11/2020"
+}]

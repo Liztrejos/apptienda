@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Productos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-text color="primary">
+    <h2>Productos</h2>
+  </ion-text>
+  <ion-row>
+    <ion-col>codigo</ion-col>
+    <ion-col>Nombre producto</ion-col>
+    <ion-col>Precio</ion-col>
+    <ion-col>Fecha Entrada</ion-col>
+    
+  </ion-row>
+  <ion-list *ngFor="let producto of productos">
+    <ion-item>
+        <ion-label>{{producto.codigo}}</ion-label>
+        <ion-label>{{producto.nom_producto}}</ion-label>
+        <ion-label>{{producto.precio}}</ion-label>
+        <ion-label>{{producto.fecha_entrada}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
