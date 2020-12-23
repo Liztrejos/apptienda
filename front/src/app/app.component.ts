@@ -63,20 +63,10 @@ export class AppComponent implements OnInit {
       title: 'Proveedores',
       url: '/listarproveedores/',
       icon: 'people-circle'
-    },
+    }
 
-    {
-      title: 'Facturas',
-      url: '/folder/Inbox',
-      icon: 'reader'
-    },
-    {
-      title: 'Ventas',
-      url: '/folder/Inbox',
-      icon: 'card'
-    },
-    
-
+  
+  
   ];
  
 

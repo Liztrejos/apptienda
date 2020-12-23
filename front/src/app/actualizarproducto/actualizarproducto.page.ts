@@ -32,7 +32,7 @@ export class ActualizarproductoPage implements OnInit {
   async mensajeBusqueda() {
     if (await(this.busqueda)){
       const toast = await this.toastController.create({
-        message: 'Encontro cliente',
+        message: 'Encontro producto',
         duration: 2000
       });
       
@@ -40,7 +40,7 @@ export class ActualizarproductoPage implements OnInit {
       toast.present();
     } else{
       const toast = await this.toastController.create({
-        message: 'No Encontro cliente',
+        message: 'No Encontro producto',
         duration: 2000
       });
       toast.present();
@@ -62,22 +62,24 @@ export class ActualizarproductoPage implements OnInit {
     this.mensajeBusqueda();
     this.myFlag =false;
   }
-  // actualizarCliente(){
+  actualizarProducto(){
     
-  //   let data ={
-  //     nombre:this.nombre,
-  //     cedula:this.cedula,
-  //     telefono:this.telefono
-  //   }
-  //   this.apiService.putClientes(this.codigo,data).subscribe(()=> {
-  //     this.codigo ="",
-  //     this.nombre ="",
-  //     this.cedula="",
-  //     this.telefono=""
-  //   });
-  //   this.mensajeActualizar();
-  //   this.myFlag = false;
-  // }
+    let data ={
+      nom_producto:this.nom_producto,
+      precio:this.precio,
+      fecha_entrada:this.fecha_entrada,
+      proveedor: this.proveedor
+    }
+    this.apiService.putProductos(this.codigo,data).subscribe(()=> {
+      this.codigo ="",
+      this.nom_producto ="",
+      this.precio="",
+      this.fecha_entrada="",
+      this.proveedor = ""
+    });
+    this.mensajeActualizar();
+    this.myFlag = false;
+  }
 
 
 }
